@@ -1,0 +1,122 @@
+@import '../variables.scss';
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+  }
+
+  .modal-img {
+    margin-right: 20px;
+    object-fit: contain;
+  }
+
+  .modal-details {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .modal-details h2 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+
+  .modal-price {
+    font-size: 20px;
+    color: #333;
+    margin: 2px 0;
+    font-weight: 600;
+  }
+
+  .modal-description {
+    color: #666;
+    margin: 3px;
+    font-size: 10px;
+  }
+
+  .modal-details-link {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 12px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .modal-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    border: 2px solid #010217;
+    border-radius: 8px;
+    max-width: 100px;
+    padding: 5px;
+    justify-content: center;
+  }
+
+  .modal-quantity button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .modal-quantity input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    /* Remover setas do input number */
+    -webkit-appearance: none; /* Para navegadores baseados no WebKit (Chrome, Safari) */
+    -moz-appearance: textfield; /* Para Firefox */
+    appearance: none; /* Propriedade padrão para compatibilidade */
+  }
+
+  .btn-buy {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 245px;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
+  .modal-close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+}

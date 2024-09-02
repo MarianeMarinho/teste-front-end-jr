@@ -1,0 +1,91 @@
+@import "../variables.scss";
+
+.tipo-produto {
+  padding: 0 2rem;
+  position: relative;
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #bdbdbd transparent;
+
+    ::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #bdbdbd;
+      border-radius: 10px;
+    }
+
+    li {
+      cursor: pointer;
+      color: #3b3b3b;
+      font-size: 16px;
+      border: 1px solid #bdbdbd;
+      padding: 10px;
+      margin: 0;
+      flex: 1;
+      text-align: center;
+      transition: color 0.3s;
+      min-width: 120px;
+
+      &:hover {
+        color: $primary-color;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .scroll-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20px;
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .tipo-produto {
+    padding: 0 1rem;
+
+    ul {
+      flex-direction: column;
+      align-items: stretch;
+      overflow-x: visible;
+    }
+
+    li {
+      margin-bottom: 1rem;
+      flex: none;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .tipo-produto {
+    padding: 0 1.5rem;
+
+    ul {
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 1rem;
+    }
+  }
+}

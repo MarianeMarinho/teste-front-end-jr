@@ -1,0 +1,111 @@
+@import "../variables.scss";
+
+.sessao-produtos-relacionados {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap; // Permite que os itens se movam para novas linhas quando necessário
+
+  .item-sessao {
+    height: 18rem;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 590px;
+    width: calc(50% - 10px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  .texto-produtos-relacionados {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 27px;
+    align-items: flex-start;
+    justify-content: center;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+    z-index: 2;
+  }
+
+  .texto-produtos-relacionados h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .texto-produtos-relacionados p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  .texto-produtos-relacionados button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 890px) {
+  .sessao-produtos-relacionados {
+    .item-sessao {
+      width: calc(100% - 20px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sessao-produtos-relacionados {
+    padding: 10px;
+    .item-sessao {
+      height: 14rem;
+    }
+    .texto-produtos-relacionados h2 {
+      font-size: 30px;
+    }
+    .texto-produtos-relacionados p {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .sessao-produtos-relacionados {
+    .item-sessao {
+      height: 12rem;
+    }
+    .texto-produtos-relacionados h2 {
+      font-size: 24px;
+    }
+    .texto-produtos-relacionados p {
+      font-size: 0.75rem;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import "../variables.scss";
+
+.categorias {
+  display: flex;
+  padding: 3rem 0;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .item-categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .card {
+    background-color: #f4f4f4;
+    box-shadow: $box-shadow;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+  }
+
+  .texto-categoria {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4e4e4eeb;
+    transition: color 0.3s;
+  }
+
+  .item-categoria.selected .card {
+    background-color: #ffffff;
+  }
+
+  .card:hover {
+    background-color: #ffffff;
+  }
+
+  .item-categoria:hover .texto-categoria {
+    color: $primary-color;
+  }
+
+  .item-categoria:hover .card .icon {
+    color: $primary-color;
+  }
+
+  .icon {
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    transition: color 0.3s;
+
+    p {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+  }
+}

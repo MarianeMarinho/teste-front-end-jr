@@ -1,31 +1,41 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End Jr
+# Projeto React - Teste Admissional para Front-end Jr. na Econverse
 
-### Vem ser #Econverse!
+Bem-vindo ao repositório do projeto React, desenvolvido como parte do processo seletivo para a vaga de desenvolvedor na Econverse. Este projeto foi criado para demonstrar habilidades em desenvolvimento front-end utilizando React.
 
-Segue abaixo as instruções para a execução do teste.
+## 🚀 Começando
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+Siga as instruções abaixo para configurar e executar o projeto localmente.
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+### 📋 Pré-requisitos
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+Certifique-se de ter o **Node.js** e o **npm** instalados em sua máquina. Você pode baixá-los em [nodejs.org](https://nodejs.org/).
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+### 🔧 Instalação
 
-**Boa sorte! ;)**
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/usuario/repositorio.git
+   ```
+
+2. Instale as dependências:
+
+## ⚙️ Executando o Projeto
+
+Inicie o servidor de desenvolvimento:
+
+O projeto será aberto automaticamente no seu navegador padrão. Caso contrário, acesse http://localhost:3000.
+
+## 🛠️ Scripts Disponíveis
+
+No diretório do projeto, você pode executar os seguintes scripts:
+
+` npm run build`: Compila o projeto.
+
+` npm start`: Inicia o servidor de desenvolvimento.
+
+### 📚 Complemento
+
+Este projeto faz parte do teste admissional para a vaga de desenvolvedor Front-End Jr na Econverse. Agradeço a oportunidade e espero que este projeto demonstre minhas habilidades e dedicação.
+
+Feito com ❤️ por Mariane

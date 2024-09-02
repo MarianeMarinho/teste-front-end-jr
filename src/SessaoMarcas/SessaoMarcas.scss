@@ -1,0 +1,27 @@
+@import "../variables.scss";
+@import "react-multi-carousel/lib/styles.css"; // Certifique-se de incluir o CSS da biblioteca
+
+#sessao-marcas {
+  padding: 1rem 0rem;
+  margin-bottom: 20px;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+  }
+
+  ul img {
+    border-radius: 50%;
+    border: 4px solid transparent;
+    box-shadow: $box-shadow;
+    object-fit: contain;
+  }
+
+  .marca-item {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+}
