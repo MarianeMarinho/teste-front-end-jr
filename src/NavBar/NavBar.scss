@@ -34,12 +34,12 @@
 
     .search-box {
       position: relative;
-      margin: 0 1rem;
+      margin: 0 4rem;
       display: flex;
       align-items: center;
       background-color: #f6f5f2;
       border-radius: 15px;
-      flex: 1;
+      flex: 0.7;
     }
 
     .search-input {
@@ -73,20 +73,20 @@
   .menu-links {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; // Adiciona o flex-wrap para permitir que os itens se ajustem em várias linhas
+    flex-wrap: wrap; 
 
     ul {
       display: flex;
       list-style-type: none;
       gap: 6rem;
-      flex-wrap: wrap; // Permite que os itens da lista se ajustem em várias linhas
+      flex-wrap: wrap; 
 
       li {
         margin: 0 1rem;
         font-size: 13px;
         font-weight: 600;
         transition: color 0.3s;
-        white-space: nowrap; // Garante que o texto não quebre em várias linhas
+        white-space: nowrap;
 
         &:hover {
           color: $primary-color;
@@ -103,7 +103,7 @@
     }
   }
 
-  // Toggle do menu mobile
+ 
   .menu-toggle {
     display: none;
     cursor: pointer;

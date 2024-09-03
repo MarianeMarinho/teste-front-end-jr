@@ -5,9 +5,10 @@
   justify-content: space-around;
   gap: 20px;
   padding: 20px;
-  flex-wrap: wrap; // Permite que os itens se movam para novas linhas quando necessário
-
+  flex-wrap: wrap; 
+  
   .item-sessao {
+
     height: 18rem;
     position: relative;
     border-radius: 10px;

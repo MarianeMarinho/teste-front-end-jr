@@ -6,6 +6,7 @@ import Categorias from "./Categorias/Categorias";
 import NavBar from "./NavBar/NavBar";
 import Rodape from "./Rodape/Rodape";
 import SessaoMarcas from "./SessaoMarcas/SessaoMarcas";
+import "./SessaoMarcas/SessaoMarcas.scss";
 import SessaoParceiros from "./SessaoParceiros/SessaoParceiros";
 import SessaoProdutosRelacionados from "./SessaoProdutosRelacionados/SessaoProdutosRelacionados";
 import SessaoTipoProduto from "./SessaoTipoProduto/SessaoTipoProduto";
