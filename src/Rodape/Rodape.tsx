@@ -53,8 +53,10 @@ function Rodape() {
             Lorem, ipsum dolor sit amet consectetur adipisit amet consectetur
             adipi
           </p>
+          <div className="item-card-submit">
           <input type="text" placeholder="Digite seu e-mail" />
           <button>OK</button>
+          </div>
         </div>
       </div>
       <hr />
